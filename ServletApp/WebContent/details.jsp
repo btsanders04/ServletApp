@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
+	pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -15,11 +15,31 @@
 
 </head>
 <body>
-<div class="container">
-  <div class="jumbotron" align="center">
-    <h1>Details</h1> 
-    
-  </div>
-</div>
+	<div class="container">
+		<div class="jumbotron" align="center">
+			<h1>Details</h1>
+			<p>${custName}</p>
+		</div>
+	</div>
+	<div class="container-fluid">
+		
+		<table class="table table-bordered">
+			<thead>
+				<tr>
+					<th>Address 1</th>
+					<th>Address 2</th>
+					<th>City</th>
+					<th>State</th>
+					<th>Zipcode</th>
+					<th>Phone #1</th>
+					<th>Phone #2</th>
+					<th>Credit Limit</th>
+					<th>Email</th>
+				</tr>
+			</thead>
+			${message}
+			</tbody>
+		</table>
+	</div>
 </body>
 </html>
